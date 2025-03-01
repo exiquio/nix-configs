@@ -61,6 +61,9 @@
 
     # Synack
     #vmware-horizon-client 
+
+    # Education
+    exercism
   ];
 
   # Shell
