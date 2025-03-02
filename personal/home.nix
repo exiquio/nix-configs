@@ -9,13 +9,11 @@
     openjdk
 
     # CLI Tools
-    tmux
     jq
     feh
     glow
     xclip
     bat
-    lsd
     ripgrep
     fd
     glances
@@ -111,10 +109,28 @@
 
     settings = {
       shell-integration = "detect";
-      theme = "Dracula";
-      window-decoration = "auto";
-      fullscreen = "true";
+      theme = "/home/exiquio/Tools/dracula-pro/themes/ghostty/pro";
+      background-opacity = "0.9";
     };
+  };
+  programs.tmux = {
+    enable = true;
+    plugins = with pkgs.tmuxPlugins; [
+      sensible
+      yank
+      {
+        plugin = dracula;
+        extraConfig = ''
+          set -g @dracula-show-battery false
+          set -g @dracula-show-powerline true
+          set -g @dracula-refresh-rate 10
+        '';
+      }
+    ];
+
+    extraConfig = ''
+      set -g mouse on
+    '';
   };
 
   # Source control
@@ -127,6 +143,68 @@
     };
   };
 
+  # CLI Tools
+  programs.lsd = {
+    enable = true;
+
+    settings = {
+      layout = "oneline";
+      size = "short";
+      permission = "rwx";
+      hyperlink = "never";
+      no-symlink = false;
+      symlink-arrow = "⇒";
+    };
+
+    colors = {
+      userColor = "#00b3b3";
+      groupColor = "#e7e7e7";
+
+      permissions = {
+        read = "#b3b3ff";
+        write = "#d66bb3";
+        exec = "#00b3b3";
+        execSticky = "#00b3b3";
+        noAccess = "#d66b66";
+      };
+
+      date = {
+        hourOld = "#9292b3";
+        dayOld = "#6666b3";
+        older = "#9999b3";
+      };
+
+      size = {
+        none = "#9999b3";
+        small = "#66ff66";
+        medium = "#d77f42";
+        large = "#d66b66";
+      };
+
+      inode = {
+        valid = "#e7e7e7";
+        invalid = "#d66b66";
+      };
+
+      links = {
+        valid = "#00b3b3";
+        invalid = "#d66b66";
+      };
+
+      treeEdge = "#b3b3ff";
+
+      color = {
+        when = "always";
+        theme = "custom";
+      };
+
+      icons = {
+        when = "always";
+        theme = "fancy";
+        separator = " ";
+      };
+    };
+  };
 
   # Home Manager
   home.stateVersion = "24.11";
