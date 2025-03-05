@@ -48,11 +48,6 @@
     # Quality of Life
     variety
 
-    # Proton
-    protonmail-desktop
-    proton-pass
-    protonvpn-gui
-
     # Cracking
     hashcat
     john
