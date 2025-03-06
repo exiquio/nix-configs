@@ -20,7 +20,7 @@
     openvpn
     gh
     ruby
-    python3
+    python3Full
     
     # Programming
     zig
@@ -54,6 +54,10 @@
 
     # Synack
     #vmware-horizon-client 
+
+    # Cloud
+    azure-cli
+    terraform
   ];
 
   # Shell
