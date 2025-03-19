@@ -46,6 +46,7 @@
     rdesktop
     freerdp3
     metasploit
+    exploitdb
     smbmap
     sqlmap
     hashcat
