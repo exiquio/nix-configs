@@ -78,7 +78,7 @@
       alias update='sudo nix flake update --flake /etc/nixos/'
       alias upgrade='sudo nixos-rebuild switch --flake /etc/nixos/'
       alias clean='sudo nix-collect-garbage -d'
-      alias burpsuite='java -jar Tools/Burp-Suite-Pro/burpsuite_pro_v2024.12.1.jar'
+      alias burpsuite='java -jar "/home/redteam/Tools/Web Applications/Web Proxies/Burp Suite Pro/burpsuite_pro_v2024.12.1.jar"'
 
       export PATH="/home/redteam/go/bin:/home/redteam/.pdtm/go/bin:$PATH"
     '';
