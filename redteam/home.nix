@@ -55,6 +55,7 @@
     bloodhound-py
     thc-hydra
     medusa
+    samba
   ];
 
   # Shell
