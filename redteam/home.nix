@@ -58,6 +58,7 @@
     samba
     enum4linux-ng
     nikto
+    whatweb
   ];
 
   # Shell
