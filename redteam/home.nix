@@ -56,6 +56,7 @@
     thc-hydra
     medusa
     samba
+    enum4linux-ng
   ];
 
   # Shell
