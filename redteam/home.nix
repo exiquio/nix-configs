@@ -6,7 +6,6 @@
   home.packages = with pkgs; [
     # Dependancies
     openjdk
-    libpcap
 
     # CLI Tools
     tmux
@@ -59,6 +58,7 @@
     enum4linux-ng
     nikto
     whatweb
+    naabu
   ];
 
   # Shell
