@@ -7,6 +7,12 @@
     # Dependancies
     openjdk
 
+    # Programming
+    (pkgs.python3.withPackages (ppkgs: [
+      ppkgs.requests
+    ]))
+    go
+
     # CLI Tools
     tmux
     jq
@@ -22,7 +28,6 @@
     gh
     unzip
     python3
-    go
 
     # Productivity 
     flameshot
