@@ -121,6 +121,9 @@
     enable = true;
     userName = "Exiquio Cooper-Anderson";
     userEmail = "exiquio@gmail.com";
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
   };
 
   # Home Manager

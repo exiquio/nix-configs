@@ -84,6 +84,7 @@
   programs = {
     fish.enable = true;
     firefox.enable = true;
+    gnupg.agent.enable = true;
     proxychains = {
       enable = true;
       proxies.prx1.enable = true;
