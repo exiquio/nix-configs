@@ -30,6 +30,7 @@
 
     # Productivity 
     flameshot
+    obsidian
 
     # Browsers 
     ungoogled-chromium
