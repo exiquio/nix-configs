@@ -27,7 +27,6 @@
     openvpn
     gh
     unzip
-    python3
 
     # Productivity 
     flameshot
