@@ -100,6 +100,9 @@
     clinfo
     kdePackages.kate
     kdePackages.kcalc
+    kdePackages.kaccounts-providers
+    kdePackages.kaccounts-integration
+    kdePackages.kio-gdrive
   ];
 
   # Default editor

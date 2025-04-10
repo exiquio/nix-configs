@@ -34,7 +34,6 @@
     libreoffice-qt6-fresh
     flameshot
     todoist-electron
-    kdePackages.kio-gdrive
 
     # Communitcation 
     slack
