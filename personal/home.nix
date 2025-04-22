@@ -24,6 +24,19 @@
     # Programming
     (pkgs.python3.withPackages (ppkgs: [
       # E.g., ppkgs.requests
+ 
+      # GOAD Requirements
+      ppkgs.rich
+      ppkgs.jinja2
+      ppkgs.psutil
+      ppkgs.pyyaml
+      ppkgs.ansible-runner
+      ppkgs.azure-core
+      ppkgs.azure-mgmt-compute
+      ppkgs.azure-mgmt-network
+      ppkgs.azure-identity
+      ppkgs.boto3
+      ppkgs.proxmoxer
     ]))
     zig
 
@@ -51,6 +64,8 @@
     hashcat
     john
 
+    # Virtualization
+    vagrant
 
     # Cloud
     #azure-cli
