@@ -110,9 +110,14 @@
 
   # Virtualization
   virtualisation = {
+    # Docker
     docker.enable = true;
+
+    # Virt-Manger/Qemu
     libvirtd.enable = true;
     spiceUSBRedirection.enable = true;
+
+    # VirtualBoax
     virtualbox.host.enable = true;
   };
 
