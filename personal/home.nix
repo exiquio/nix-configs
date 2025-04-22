@@ -20,9 +20,11 @@
     openvpn
     gh
     ruby
-    python3Full
 
     # Programming
+    (pkgs.python3.withPackages (ppkgs: [
+      # E.g., ppkgs.requests
+    ]))
     zig
 
     # Web Browsers
@@ -49,13 +51,10 @@
     hashcat
     john
 
-    # Virtualization
-    vagrant
 
     # Cloud
     #azure-cli
     #terraform
-
     # Synack
     #vmware-horizon-client 
   ];
