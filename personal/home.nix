@@ -22,22 +22,25 @@
     ruby
 
     # Programming
-    (pkgs.python3.withPackages (ppkgs: [
-      # E.g., ppkgs.requests
+    (pkgs.python3.withPackages (python_packages: [
+      # E.g., python_packages.requests
  
       # GOAD Requirements
-      ppkgs.rich
-      ppkgs.jinja2
-      ppkgs.psutil
-      ppkgs.pyyaml
-      ppkgs.ansible-runner
-      ppkgs.azure-core
-      ppkgs.azure-mgmt-compute
-      ppkgs.azure-mgmt-network
-      ppkgs.azure-identity
-      ppkgs.boto3
-      ppkgs.proxmoxer
-      ppkgs.ansible-core
+      python_packages.pip
+      python_packages.rich
+      python_packages.jinja2
+      python_packages.psutil
+      python_packages.pyyaml
+      python_packages.azure-core
+      python_packages.azure-mgmt-compute
+      python_packages.azure-mgmt-network
+      python_packages.azure-identity
+      python_packages.boto3
+      python_packages.proxmoxer
+      python_packages.ansible
+      python_packages.ansible-core
+      python_packages.ansible-runner
+      python_packages.pywinrm
     ]))
     zig
 
