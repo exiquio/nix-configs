@@ -120,7 +120,8 @@
     settings = {
       shell-integration = "detect";
       theme = "/home/exiquio/Tools/dracula-pro/themes/ghostty/pro";
-      background-opacity = "0.9";
+      window-decoration = "none";
+      fullscreen = "true";
     };
   };
   programs.tmux = {
