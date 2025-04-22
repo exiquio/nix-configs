@@ -113,6 +113,7 @@
     docker.enable = true;
     libvirtd.enable = true;
     spiceUSBRedirection.enable = true;
+    virtualbox.host.enable = true;
   };
 
   # Other Services
@@ -123,7 +124,7 @@
     isNormalUser = true;
     shell = pkgs.fish;
     description = "Exiquio Cooper-Anderson";
-    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" "vboxusers" ];
   };
 
   # TODO: READ BEFORE CHANGING!

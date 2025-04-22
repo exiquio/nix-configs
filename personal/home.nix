@@ -21,7 +21,7 @@
     gh
     ruby
     python3Full
-    
+
     # Programming
     zig
 
@@ -42,9 +42,6 @@
     # Mulitmedia
     celluloid
 
-    # Virtualization
-    virt-manager
-
     # Quality of Life
     variety
 
@@ -52,12 +49,15 @@
     hashcat
     john
 
-    # Synack
-    #vmware-horizon-client 
+    # Virtualization
+    vagrant
 
     # Cloud
-    azure-cli
-    terraform
+    #azure-cli
+    #terraform
+
+    # Synack
+    #vmware-horizon-client 
   ];
 
   # Shell
@@ -106,8 +106,7 @@
     settings = {
       shell-integration = "detect";
       theme = "/home/exiquio/Tools/dracula-pro/themes/ghostty/pro";
-      window-decoration = "none";
-      fullscreen = "true";
+      background-opacity = "0.9";
     };
   };
   programs.tmux = {
