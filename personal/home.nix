@@ -50,6 +50,7 @@
     libreoffice-qt6-fresh
     flameshot
     todoist-electron
+    freeplane
 
     # Communitcation 
     slack
