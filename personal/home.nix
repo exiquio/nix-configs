@@ -37,6 +37,7 @@
       ppkgs.azure-identity
       ppkgs.boto3
       ppkgs.proxmoxer
+      ppkgs.ansible-core
     ]))
     zig
 
