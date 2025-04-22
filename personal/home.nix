@@ -72,6 +72,9 @@
     # Virtualization
     vagrant
 
+    # Remote Access
+    freerdp3
+
     # Cloud
     #azure-cli
     #terraform
