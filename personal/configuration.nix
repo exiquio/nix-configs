@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  # TODO: Refactor
+
   imports =
     [
       ./hardware-configuration.nix
@@ -62,6 +64,11 @@
 
   # Printing
   services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
 
   # Audio
   hardware.pulseaudio.enable = false;
