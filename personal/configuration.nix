@@ -110,6 +110,7 @@
     kdePackages.kaccounts-providers
     kdePackages.kaccounts-integration
     kdePackages.kio-gdrive
+    kdePackages.signond
   ];
 
   # Default editor
