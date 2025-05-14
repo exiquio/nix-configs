@@ -70,7 +70,7 @@
     john
 
     # Virtualization
-    vagrant
+    remmina
 
     # Remote Access
     freerdp3
