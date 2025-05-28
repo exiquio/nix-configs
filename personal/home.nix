@@ -58,6 +58,7 @@
     # Communitcation 
     slack
     discord
+    zoom-us
 
     # Mulitmedia
     celluloid
